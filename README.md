@@ -5,7 +5,6 @@ A simple documentation website for the Time Calculator app, featuring privacy po
 ## Styling
 
 The website uses a clean, minimal design with:
-- Embedded SVG favicon
 - Responsive layout that works on mobile and desktop
 - Consistent dark footer with contact information
 
