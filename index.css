@@ -1,0 +1,159 @@
+/* Import Onest font variants */
+@font-face {
+    font-family: 'Onest';
+    src: url('fonts/onest/onest_regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('fonts/onest/onest_medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('fonts/onest/onest_bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('fonts/onest/onest_light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+/* Global Styles */
+body, html {
+    font-family: 'Onest', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-data {
+    padding: 120px 50px 20px 50px;
+    flex: 1;
+}
+
+/* Headline Large - H1 */
+h1 {
+    font-size: 44px;
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: black;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Headline Medium - H2 */
+h2 {
+    font-size: 28px;
+    line-height: 1.24;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: black;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+/* Headline Small - H3 */
+h3 {
+    font-size: 22px;
+    line-height: 1.33;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 16px;
+}
+
+/* Body Text - P */
+p, li {
+    font-size: 16px;
+    line-height: 1.43;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 16px;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+/* Footer */
+footer > p, footer a {
+    color: white;
+}
+
+footer {
+    margin-top: auto;
+    background: #252525;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    footer > p {
+        padding: 0;
+        margin: 4px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+        margin-left: 4px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    p, li {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .content-data {
+        padding: 80px 20px 8px 20px;
+    }
+}
