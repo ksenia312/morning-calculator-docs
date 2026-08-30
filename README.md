@@ -11,6 +11,7 @@ The website uses a clean, minimal design with:
 
 ## Structure
 
+
 ```
 morning-calculator-docs/
 ├── index.html
