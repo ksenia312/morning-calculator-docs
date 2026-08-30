@@ -28,72 +28,92 @@ body, html {
     font-family: 'Onest', sans-serif;
     margin: 0;
     padding: 0;
-    background: #ffffff;
-    color: #333;
+    background: linear-gradient(135deg, #f8f9fb 0%, #f0f3f8 100%);
+    color: #2c3e50;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .content-data {
-    padding: 120px 50px 20px 50px;
+    padding: 100px 60px 40px 60px;
     flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Headline Large - H1 */
 h1 {
-    font-size: 44px;
-    line-height: 1.25;
-    font-weight: 500;
-    letter-spacing: 0;
-    color: black;
-    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #1a2332;
+    margin-bottom: 32px;
+    margin-top: 0;
     text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* Headline Medium - H2 */
 h2 {
-    font-size: 28px;
-    line-height: 1.24;
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    color: black;
-    margin-bottom: 16px;
-    margin-left: 16px;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    color: #1a2332;
+    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-left: 0;
+    padding-left: 12px;
+    border-left: 4px solid #667eea;
 }
 
 /* Headline Small - H3 */
 h3 {
-    font-size: 22px;
-    line-height: 1.33;
-    font-weight: 500;
-    color: black;
-    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    margin-top: 24px;
 }
 
 /* Body Text - P */
 p, li {
     font-size: 16px;
-    line-height: 1.43;
+    line-height: 1.6;
     font-weight: 400;
-    color: black;
-    margin-bottom: 16px;
+    color: #4a5f7f;
+    margin-bottom: 20px;
 }
 
 /* Links */
 a {
-    color: #0066cc;
+    color: #667eea;
     text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 a:hover {
+    color: #764ba2;
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
 /* Lists */
 ul, ol {
     margin-left: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    padding-left: 8px;
 }
 
 /* Footer */
@@ -103,57 +123,87 @@ footer > p, footer a {
 
 footer {
     margin-top: auto;
-    background: #252525;
+    background: linear-gradient(135deg, #1a2332 0%, #2c3e50 100%);
     color: white;
-    padding: 20px 40px;
+    padding: 40px 60px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
-    color: white;
+    color: #a8c5e0;
     text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 footer a:hover {
+    color: white;
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
     footer {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap-reverse;
+        padding: 30px 20px;
+        width: 100%;
     }
 
     footer > p {
         padding: 0;
-        margin: 4px;
+        margin: 8px;
     }
 
     h1 {
         font-size: 36px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
+        word-wrap: break-word;
     }
 
     h2 {
-        font-size: 24px;
-        margin-bottom: 12px;
-        margin-left: 4px;
+        font-size: 26px;
+        margin-bottom: 16px;
+        margin-left: 0;
+        padding-left: 8px;
+        word-wrap: break-word;
     }
 
     h3 {
-        font-size: 16px;
-        margin-bottom: 8px;
+        font-size: 18px;
+        margin-bottom: 12px;
+        margin-top: 16px;
+        word-wrap: break-word;
     }
 
     p, li {
-        font-size: 14px;
-        margin-bottom: 6px;
+        font-size: 15px;
+        margin-bottom: 12px;
+        word-wrap: break-word;
     }
 
     .content-data {
-        padding: 80px 20px 8px 20px;
+        padding: 80px 20px 20px 20px;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
