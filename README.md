@@ -1,6 +1,6 @@
 # Time Calculator - Documentation Website
 
-A simple documentation website for the Time Calculator app, featuring privacy policy, terms and conditions, and child safety standards.
+A simple documentation website for the Time Calculator app, featuring privacy policy, terms and conditions, child safety standards, and account deletion instructions.
 
 ## Styling
 
@@ -16,6 +16,7 @@ morning-calculator-docs/
 ├── index.html
 ├── index.css
 ├── child-safety-standards.html
+├── delete-account.html
 ├── privacy-policy.html
 ├── terms-and-conditions.html
 ├── README.md
